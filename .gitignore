@@ -19,3 +19,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# don't lint build output (make sure it's set to your correct build folder name)
+dist
