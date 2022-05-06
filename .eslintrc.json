@@ -24,6 +24,17 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"], // Your TypeScript files extension
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "tsconfig.json",
+        "tsconfigRootDir": ".",
+        "sourceType": "module"
+      }
+    }
+  ],
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier", "jest"],
   "rules": {
     "indent": ["error", 2],
